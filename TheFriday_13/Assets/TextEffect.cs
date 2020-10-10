@@ -1,31 +1,28 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.Runtime.InteropServices.ComTypes;
 using UnityEngine;
 using UnityEngine.UI;
 public class TextEffect : MonoBehaviour
 {
     public Text Buy_cookie_txt;
-    public List<string> listSentences;
-    private int count; //대화 진행 상황 카운트
-    /*
+    private string m_text = "그렇게 추자와 춘자는 쿠키를 사러 갔다.";
     // Start is called before the first frame update
     void Start()
     {
-//        Buy_cookie_txt.text = " ";
-        count = 0;
-        listSentences = new List<string>();
+        StartCoroutine(_typing());
     }
 
-     IEnumerator ShowCoroutine()
+    IEnumerator _typing()
     {
-        for (int i = 0; i < Buy_cookie_txt.text.Length; i++)
+        yield return new WaitForSeconds(0.5f);
+        //타이핑 효과
+        for (int i = 0; i <= m_text.Length; i++)
         {
-
+            Buy_cookie_txt.text = m_text.Substring(0, i);
+            //딜레이 주기
+            yield return new WaitForSeconds(0.15f);
         }
     }
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }*/
 }
