@@ -14,4 +14,9 @@ public class SceneChange : MonoBehaviour
     {
         SceneManager.LoadScene("Prolog_1");
     }
+
+    public void moveProLog2()
+    {
+        SceneManager.LoadScene("Prolog_2");
+    }
 }
