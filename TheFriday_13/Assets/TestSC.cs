@@ -7,15 +7,26 @@ using Debug = UnityEngine.Debug;
 
 public class TestSC : MonoBehaviour
 {
+    float timer;
+    int waitingTime;
+    public Button Next;
+    bool inside = true;
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("TEST ME welcome!!");
+        timer = 0.0f;
+        waitingTime = 3;
+        inside = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        timer += Time.deltaTime;
+        if (timer > waitingTime)
+        {
+            //Action
+            timer = 0.0f;
+        }
     }
 }
