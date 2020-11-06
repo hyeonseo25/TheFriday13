@@ -698,7 +698,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -187
     y: -46
-    width: 72.4
+    width: 112.4
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -734,8 +734,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 1141916856}
+  selectedCommands:
+  - {fileID: 1141916853}
   variables: []
   description: 
   stepPause: 0
@@ -1000,7 +1002,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ef5b69234975b74a879726f3a2cc2e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Next: {fileID: 664161188}
+  Next: {fileID: 0}
 --- !u!4 &1632993823
 Transform:
   m_ObjectHideFlags: 0
